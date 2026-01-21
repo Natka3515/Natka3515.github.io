@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видалення облікового запису - My Zmigrod</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        h1 {
+            color: #0B6623;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #228B22;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #0B6623;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #228B22;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .warning strong {
+            color: #856404;
+        }
+
+        .info {
+            background: #d1ecf1;
+            border: 2px solid #0c5460;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .info strong {
+            color: #0c5460;
+        }
+
+        .steps {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #228B22;
+            margin: 20px 0;
+        }
+
+        .steps ol {
+            margin-left: 20px;
+        }
+
+        .steps li {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #0B6623;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+            margin-bottom: 15px;
+            font-family: inherit;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #228B22;
+        }
+
+        .contact-form button {
+            background: #228B22;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #0B6623;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .contact-info a {
+            color: #228B22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .back-link a {
+            color: #228B22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Видалення облікового запису</h1>
+        <p><strong>Додаток:</strong> My Zmigrod</p>
+        <p><strong>Розробник:</strong> My Zmigrod</p>
+
+        <div class="warning">
+            <p><strong>⚠️ УВАГА:</strong> Видалення облікового запису є незворотною дією. Після видалення всі ваші дані будуть безповоротно втрачені.</p>
+        </div>
+
+        <h2>Що буде видалено</h2>
+        <p>Після видалення вашого облікового запису будуть видалені наступні дані:</p>
+        <ul>
+            <li><strong>Персональні дані:</strong> ім'я, email, номер телефону, адреса</li>
+            <li><strong>Фотографії профілю:</strong> ваш аватар</li>
+            <li><strong>Всі ваші оголошення:</strong> заголовки, описи, ціни, фотографії товарів</li>
+            <li><strong>Історія активності:</strong> всі створені вами оголошення</li>
+            <li><strong>Список улюблених:</strong> збережені вами оголошення</li>
+            <li><strong>Дані про баланс:</strong> інформація про ваш баланс</li>
+            <li><strong>Контактні дані:</strong> Telegram, Viber, WhatsApp (якщо були вказані)</li>
+            <li><strong>Дані автентифікації:</strong> ваш обліковий запис Firebase Authentication</li>
+        </ul>
+
+        <h2>Що буде збережено</h2>
+        <div class="info">
+            <p><strong>Деякі дані можуть зберігатися в резервних копіях до 90 днів</strong> для забезпечення безпеки та можливості відновлення у разі помилкового видалення. Після цього періоду дані будуть остаточно видалені.</p>
+        </div>
+
+        <h2>Як видалити обліковий запис</h2>
+        <div class="steps">
+            <h3>Спосіб 1: Через додаток (рекомендовано)</h3>
+            <ol>
+                <li>Відкрийте додаток <strong>My Zmigrod</strong></li>
+                <li>Увійдіть у свій обліковий запис</li>
+                <li>Перейдіть у розділ "Профіль"</li>
+                <li>Натисніть "Налаштування" або "Видалити обліковий запис"</li>
+                <li>Підтвердіть видалення</li>
+            </ol>
+
+            <h3>Спосіб 2: Надіслати запит через форму</h3>
+            <p>Якщо у вас немає доступу до додатку або виникли проблеми, заповніть форму нижче:</p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Форма запиту на видалення облікового запису</h3>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="email">Ваш Email (який використовується в додатку):</label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+                <label for="name">Ваше ім'я (як у профілі):</label>
+                <input type="text" id="name" name="name" required placeholder="Ваше ім'я">
+
+                <label for="phone">Номер телефону (якщо вказували):</label>
+                <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX">
+
+                <label for="reason">Причина видалення (необов'язково):</label>
+                <textarea id="reason" name="reason" rows="4" placeholder="Опишіть причину видалення облікового запису..."></textarea>
+
+                <label for="confirmation">
+                    <input type="checkbox" id="confirmation" name="confirmation" required>
+                    Я розумію, що видалення облікового запису є незворотною дією та всі мої дані будуть видалені
+                </label>
+
+                <button type="submit">Надіслати запит на видалення</button>
+            </form>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
+                <em>Примітка: Після надсилання форми ваш запит буде оброблено протягом 7 робочих днів. Ви отримаєте підтвердження на вказаний email.</em>
+            </p>
+        </div>
+
+        <h2>Спосіб 3: Написати на email</h2>
+        <div class="contact-info">
+            <p>Ви також можете надіслати запит на видалення облікового запису безпосередньо на нашу електронну пошту:</p>
+            <p><strong>Email:</strong> <a href="mailto:your-email@example.com?subject=Запит на видалення облікового запису&body=Доброго дня!%0D%0A%0D%0AПрошу видалити мій обліковий запис у додатку My Zmigrod.%0D%0A%0D%0AEmail облікового запису: [вкажіть ваш email]%0D%0AІм'я: [вкажіть ваше ім'я]%0D%0A%0D%0AЯ розумію, що це незворотна дія та всі мої дані будуть видалені.%0D%0A%0D%0AДякую!">your-email@example.com</a></p>
+            <p><em>Примітка: Будь ласка, замініть email на свою реальну адресу.</em></p>
+            <p>У листі обов'язково вкажіть:</p>
+            <ul>
+                <li>Email, який використовується в додатку</li>
+                <li>Ваше ім'я (як у профілі)</li>
+                <li>Номер телефону (якщо вказували при реєстрації)</li>
+                <li>Підтвердження, що ви розумієте наслідки видалення</li>
+            </ul>
+        </div>
+
+        <h2>Скільки часу займає видалення?</h2>
+        <p>Після отримання вашого запиту:</p>
+        <ul>
+            <li><strong>Через додаток:</strong> видалення відбувається миттєво</li>
+            <li><strong>Через форму або email:</strong> обробка запиту займає до 7 робочих днів</li>
+        </ul>
+        <p>Після видалення ви отримаєте підтвердження на вказаний email.</p>
+
+        <h2>Чи можу я видалити лише частину даних?</h2>
+        <p>На даний момент наш додаток не підтримує часткове видалення даних. Ви можете:</p>
+        <ul>
+            <li>Видалити окремі оголошення через додаток</li>
+            <li>Видалити фотографії профілю</li>
+            <li>Оновити контактні дані</li>
+            <li>Але для повного видалення всіх даних потрібно видалити обліковий запис</li>
+        </ul>
+        <p><em>Примітка: Ми працюємо над додаванням функції часткового видалення даних у майбутніх оновленнях.</em></p>
+
+        <h2>Що робити, якщо я помилково видалив обліковий запис?</h2>
+        <div class="info">
+            <p>Якщо ви помилково видалили обліковий запис, <strong>негайно зв'яжіться з нами</strong> через email або форму вище. Якщо з моменту видалення пройшло менше 90 днів, ми можемо спробувати відновити ваші дані з резервної копії.</p>
+            <p><strong>Важливо:</strong> Відновлення даних не гарантується та залежить від наявності резервних копій.</p>
+        </div>
+
+        <h2>Додаткова інформація</h2>
+        <p>Для отримання додаткової інформації про обробку ваших даних, будь ласка, перегляньте нашу <a href="privacy-policy.html">Політику конфіденційності</a>.</p>
+
+        <div class="back-link">
+            <p><a href="privacy-policy.html">← Повернутися до Політики конфіденційності</a></p>
+        </div>
+    </div>
+</body>
+</html>
